@@ -1,0 +1,21 @@
+/* 
+content
+padding
+border
+margin
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border: 1px solid red;
+  background-color: aqua;
+  height: 400px;
+}
+
+p {
+  border: 1px solid black;
+}

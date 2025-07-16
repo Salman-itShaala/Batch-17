@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    background-color: aqua;
+    padding: 20px;
+    border: 2px solid black;
+    height: 650px;
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.child{
+    height: 200px;
+   flex-basis: 200px;
+    border: 2px solid red;
+    background-color: blueviolet;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
