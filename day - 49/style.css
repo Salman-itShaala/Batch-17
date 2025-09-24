@@ -178,3 +178,115 @@ main {
   right: 0;
   z-index: 0;
 }
+
+.discount-wrapper {
+  background-image: url("images/svg/rounded-border-start.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: -20deg;
+  z-index: 99;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.discount-wrapper img {
+  width: 6rem;
+}
+
+/* ------------------- hero section end ------------------- */
+
+.hot-items-section {
+  background-color: var(--primary-color);
+}
+
+.hot-items-subheading {
+  padding-bottom: 4rem;
+}
+
+.hot-items-heading,
+.hot-items-subheading {
+  color: white;
+  text-align: center;
+}
+/* 
+.hot-items-heading::before,
+.hot-items-heading::after {
+  content: "";
+  height: 2px;
+  width: 2rem;
+  background-color: #fff;
+  display: inline-block;
+} */
+
+.hot-items-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hot-items-heading span {
+  height: 3px;
+  width: 2rem;
+  background-color: rgb(255, 255, 255);
+  display: block;
+}
+
+.recipes-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+
+.recipes-wrapper a {
+  /* background-color: aqua; */
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+  transition: scale 0.3s ease-in-out;
+}
+
+.recipes-wrapper a:hover {
+  scale: 1.02;
+}
+
+.recipe-name {
+  font-weight: bold;
+  size: 1.9rem;
+  align-self: flex-start;
+  padding-bottom: 1rem;
+}
+
+.learn-more {
+  align-self: flex-start;
+  color: rgb(0, 0, 255);
+}
+
+.recipes-wrapper a img {
+  width: 100%;
+  /* border: 2px solid white; */
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid white; */
+}
