@@ -15,11 +15,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const data = await res.json();
 
+
+
     const recipes = data.recipes; // [{id, image, name}, {}, {}, {}]
+
+    console.log(recipes)
 
     for (let i = 0; i < recipes.length; i++) {
 
         const aTag = document.createElement("a");
+
+        // <a href="single-recipe.html?id=4"
+        aTag.href = `single-recipe.html?id=${recipes[i].id}`;
 
         // 1.
         const imgTag = document.createElement("img");
