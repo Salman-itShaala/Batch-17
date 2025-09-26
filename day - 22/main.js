@@ -5,7 +5,6 @@ function addGraceMarks(marks) {
   if (marks >= 35) {
     return marks;
   }
-
   const graceMarks = marks + 5;
   return graceMarks;
 }

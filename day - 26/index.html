@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Making websites interactive</title>
-    <!-- <style>
-      h1 {
+    <style>
+      .heading-emphasis {
         color: red;
         background-color: black;
         font-size: 50px;
       }
-    </style> -->
+    </style>
   </head>
   <body>
     <h1 id="heading">Learning js</h1>
 
-    <button onclick="changeContent()">Click me</button>
+    <button id="toggle-style-btn" type="button" aria-pressed="false">
+      Toggle style
+    </button>
 
     <script src="main.js"></script>
   </body>

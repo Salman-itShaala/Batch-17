@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  animation: loader 4s linear 1 forwards;
+}
+
+@keyframes loader {
+  25% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 360deg;
+  }
+  75% {
+  }
+  100% {
+    background-color: blueviolet;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.marquee-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  gap: 4rem;
+  width: 300vw;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-container p {
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200vw);
+  }
+}
+
+
+*/

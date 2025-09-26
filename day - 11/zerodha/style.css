@@ -30,5 +30,20 @@ a{
 
 .header-right {
     display: flex;
+    align-items: center;
     gap: 36px;
+}
+
+.option{
+    height: 16px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    background-color: black;
+    height: 2px;
+    border-radius: 1px;
 }

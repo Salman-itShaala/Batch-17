@@ -15,3 +15,12 @@ function getJoke() {
         .catch(error => console.log(error));
 
 }
+
+// async function getJokeWithAsync() {
+//     const res = await fetch("https://official-joke-api.appspot.com/random_joke");
+
+//     const data = await res.json();
+
+//     setupPara.innerText = `setup : ${data.setup}`;
+//     punchlinePara.innerHTML = `punchline : ${data.punchline}`;
+// }

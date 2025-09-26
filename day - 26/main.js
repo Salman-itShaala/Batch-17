@@ -1,12 +1,13 @@
-function changeContent() {
-  const h1 = document.getElementById("heading");
+document.addEventListener("DOMContentLoaded", () => {
+  const headingElement = document.getElementById("heading");
+  const toggleStyleButton = document.getElementById("toggle-style-btn");
 
-  // inline styles
-  //   h1.style.color = "blue";
-  //   h1.style.backgroundColor = "yellow";
-  //   h1.style.fontSize = "50px";
+  if (!headingElement || !toggleStyleButton) {
+    return;
+  }
 
-  h1.style.cssText = "color: red; background-color: black; font-size: 50px;";
-}
-
-// changeContent();
+  toggleStyleButton.addEventListener("click", () => {
+    const isActive = headingElement.classList.toggle("heading-emphasis");
+    toggleStyleButton.setAttribute("aria-pressed", String(isActive));
+  });
+});

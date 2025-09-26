@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  height: 100vh;
+  background-color: aqua;
+  position: relative;
+}
+
+.parent img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1 {
+  background-color: blueviolet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.container {
+  background-color: rgb(239, 188, 188);
+  height: 100vh;
+  position: relative;
+}
+
+.child-1,
+.child-2,
+.child-3 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border: 2px solid black;
+}
+
+.child-1 {
+  background-color: cadetblue;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+  rotate: 10deg;
+}
+
+.child-2 {
+  background-color: chartreuse;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+  rotate: 20deg;
+}
+
+.child-3 {
+  background-color: rgba(139, 0, 0, 1);
+  z-index: 999;
+}
+
+.box {
+  height: 100vh;
+  background: linear-gradient(to bottom, red, green);
+}
+
+.para {
+  position: sticky;
+  top: 200px;
+}

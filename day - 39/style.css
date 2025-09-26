@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIBALES (user defined values) */
+
+html {
+  --bg-color: white;
+  --text-color: black;
+}
+
+html.dark {
+  --bg-color: black;
+  --text-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

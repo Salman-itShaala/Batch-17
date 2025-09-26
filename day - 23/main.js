@@ -1,3 +1,5 @@
+"use strict";
+
 // Task: Write a function that takes two numbers and returns their sum.
 
 function calculateSum(num1, num2) {
@@ -19,4 +21,16 @@ function checkEvenOrOdd(num) {
 
 let returnNum = largest(3, 9, 7);
 
-console.log(returnNum);
+// console.log(returnNum);
+
+// sum from 1 to given number
+
+function addNums(num) {
+  let sum = 0;
+
+  for (let i = 1; i <= num; i++) {
+    sum = sum + i;
+  }
+
+  return sum;
+}

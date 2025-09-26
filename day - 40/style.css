@@ -1,0 +1,102 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+/* Combiantors */
+/* 1. Descendant selector */
+/* 2. Child selector (>) */
+/* 3. General sibling selector (~) */
+/* 4. Next sibling selector (+) */
+
+/* pseudo class */
+
+/* li:hover {
+  color: blue;
+}
+
+ul li:first-child {
+  color: red;
+}
+
+ul li:last-child {
+  color: green;
+}
+
+ul li:nth-child(3) {
+  color: darkblue;
+} */
+/* 
+ul li:nth-child(2n) {
+  color: red;
+}
+
+ul li:nth-child(2n + 1) {
+  color: blue;
+} */
+section {
+  height: 400vh;
+  background-color: aqua;
+}
+input:focus {
+  border: 4px solid red;
+  border-radius: 4px;
+  outline: none;
+}
+
+ol li::marker {
+  color: green;
+}
+
+::-webkit-scrollbar {
+  background-color: red;
+  /* width: 6px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 4px;
+}
+
+p::selection {
+  background-color: yellow;
+}
+
+h2::before {
+  content: "😁";
+}
+
+h2::after {
+  content: "🥲";
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 28px;
+}
+
+input::placeholder {
+  color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+}
+
+a:visited {
+  color: chartreuse;
+}
+
+a:hover {
+}
+
+a:active {
+  color: blue;
+}

@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: #fdbb2d;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 10vh;
+}
+
+.icon {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+  border-radius: 100%;
+  /* right: 0;
+  bottom: 0; */
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: aqua;
+}
+
+.box-2 {
+  background-color: blueviolet;
+}
+
+.box-3 {
+  /* background-color: brown; */
+  background: linear-gradient(90deg, #fdbb2d 0%, #3a1c71 100%);
+}
