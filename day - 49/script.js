@@ -9,9 +9,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const data = await res.json();
 
+
+    console.log(data);
     console.log(data.name);
 
     // dom manupulations
+
+    document.writeln(data.name)
 
 
 })

@@ -21,8 +21,26 @@
         <a href="/">Order</a>
       </nav>
       <div class="header-right">
-        <img src="images/svg/search-icon.svg" alt="" />
+        <img
+          onclick="toggleSearchBox()"
+          src="images/svg/search-icon.svg"
+          alt=""
+        />
         <img src="images/svg/option-bars.svg" alt="" />
+      </div>
+      <div class="search-wrapper" id="search-container">
+        <div class="search-box">
+          <div class="search-input-wrapper">
+            <input
+              type="search"
+              id="recipe-input"
+              placeholder="Search recipe..."
+            />
+            <button onclick="toggleSearchBox()">Close</button>
+          </div>
+
+          <div class="search-recipes-list" id="recipes-list"></div>
+        </div>
       </div>
     </header>
 
