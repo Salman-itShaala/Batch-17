@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: 0 12vw;
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+.zerodha-logo {
+  width: 8rem;
+}
+
+.zerodha-logo img {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header a {
+  color: gray;
+  text-decoration: none;
+}
