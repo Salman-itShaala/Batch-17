@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.para {
+  color: blue;
+  border: 2px solid red;
+  background-color: cornsilk;
+  width: max-content;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.alert {
+  background-color: rgb(255, 118, 118);
+  color: white;
+  font-weight: bold;
+  border: 2px solid red;
+  max-width: fit-content;
+  padding: 10px;
+}
+
+.success {
+  background-color: rgb(111, 255, 75);
+  color: white;
+  font-weight: bold;
+  border: 2px solid rgb(0, 255, 26);
+  max-width: fit-content;
+  padding: 10px;
+}
