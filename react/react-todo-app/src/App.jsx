@@ -21,6 +21,14 @@ function App() {
     };
 
     setTodos([...todos, todoObj]);
+
+    setTodoDesc("");
+    setTodoTitle("");
+  }
+
+  function deleteTodo(id) {
+    const newArray = todos.filter((todo) => todo.id !== id);
+    setTodos(newArray);
   }
 
   return (
@@ -67,25 +75,32 @@ function App() {
           <div className="grid grid-cols-5 gap-3">
             {/* todo array --> div */}
 
-            {todos.map((todo) => {
-              return (
-                <div
-                  key={todo.id}
-                  className="max-w-xs border p-2 flex flex-col items-start gap-2 rounded-xl"
-                >
-                  <p className="text-xl ">{todo.title}</p>
-                  <p className="text-neutral-500">{todo.description}</p>
-                  <div className="flex gap-2">
-                    <button className="font-bold border border-red-500 text-red-400 bg-red-100 py-2 px-4 rounded-sm">
-                      Delete
-                    </button>
-                    <button className="font-bold border border-green-500 text-green-400 bg-green-100 py-2 px-4 rounded-sm">
-                      Mark as complete
-                    </button>
+            {todos.length === 0 ? (
+              <p className="text-4xl">No todos yet</p>
+            ) : (
+              todos.map((todo) => {
+                return (
+                  <div
+                    key={todo.id}
+                    className="max-w-xs border p-2 flex flex-col items-start gap-2 rounded-xl"
+                  >
+                    <p className="text-xl ">{todo.title}</p>
+                    <p className="text-neutral-500">{todo.description}</p>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => deleteTodo(todo.id)}
+                        className="font-bold border border-red-500 text-red-400 bg-red-100 py-2 px-4 rounded-sm"
+                      >
+                        Delete
+                      </button>
+                      <button className="font-bold border border-green-500 text-green-400 bg-green-100 py-2 px-4 rounded-sm">
+                        Mark as complete
+                      </button>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })
+            )}
           </div>
         </div>
       </div>
