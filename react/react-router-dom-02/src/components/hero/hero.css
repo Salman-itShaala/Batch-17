@@ -1,0 +1,141 @@
+/* ------------ hero section start --------------- */
+
+main {
+  background-color: #33685e;
+  padding-top: 8rem;
+  padding-left: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left {
+  width: 36%;
+}
+
+.happy-customers::after {
+  height: 6rem;
+  width: 16rem;
+  background-color: rgba(255, 255, 255, 0.468);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  rotate: 6deg;
+  z-index: -99;
+}
+
+.happy-customers {
+  height: 6rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 9;
+}
+
+.rating-starts {
+  display: flex;
+  gap: 4px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.rating-starts span::before {
+  content: "|";
+  margin-inline: 10px;
+}
+
+.hero-left .hero-subheading {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-block: 2rem;
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  color: white;
+  line-height: 4.5rem;
+}
+
+.explore-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.explore-card a {
+  background-color: #fff;
+  color: var(--secondary-color);
+  padding: 0.6rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.explore-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  cursor: pointer;
+}
+.explore-card div img {
+  width: 2.6rem;
+}
+
+.hero-right {
+  width: 50%;
+  position: relative;
+  height: 100%;
+}
+
+.burger-img {
+  width: 100%;
+  margin-top: -150px;
+  z-index: 99;
+  position: relative;
+}
+
+.fluid-bg {
+  position: absolute;
+  width: 70%;
+  top: -8rem;
+  right: 0;
+  z-index: 0;
+}
+
+.discount-wrapper {
+  background-image: url("https://raw.githubusercontent.com/Salman-itShaala/Batch-17/e66bfc31cf65ee1f0b3bce9086ab0210f8541e5d/day%20-%2049/images/svg/rounded-border-start.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: -20deg;
+  z-index: 99;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.3rem;
+  color: var(--secondary-color);
+}
+
+.discount-wrapper img {
+  width: 6rem;
+}
+
+/* ------------------- hero section end ------------------- */
